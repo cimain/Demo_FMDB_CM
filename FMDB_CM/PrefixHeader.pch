@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  MLFMDB
+//
+
+//  Copyright © 2016年 Demos. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "DBHeader.h"
+
+#endif /* PrefixHeader_pch */
