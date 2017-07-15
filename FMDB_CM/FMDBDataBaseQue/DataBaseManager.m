@@ -29,7 +29,7 @@
     if (self = [super init]) {
         
         NSString *docDir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
-        NSString *filePath = [docDir stringByAppendingPathComponent:@"DB1.sqlite"];
+        NSString *filePath = [docDir stringByAppendingPathComponent:@"DB2.sqlite"];
         
         NSLog(@"路径 = %@",filePath);
         

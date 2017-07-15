@@ -87,7 +87,7 @@ static DataBase *_DBCtl = nil;
     
     // 文件路径
     
-    NSString *filePath = [documentsPath stringByAppendingPathComponent:@"model.sqlite"];
+    NSString *filePath = [documentsPath stringByAppendingPathComponent:@"DB1.sqlite"];
     
     // 实例化FMDataBase对象
     
@@ -188,7 +188,7 @@ static DataBase *_DBCtl = nil;
     //根据person是否拥有car来添加car_id
     NSNumber *maxID = @(0);
     
-    FMResultSet *res = [_db executeQuery:[NSString stringWithFormat:@"SELECT * FROM car where own_id = %@ ",person.ID]];
+    FMResultSet *res = [_db executeQuery:[NSString stringWithFormat:@"SELECT * FROM car where own_id = '%@' ",person.ID]];
     
     while ([res next]) {
         if ([maxID integerValue] < [[res stringForColumn:@"car_id"] integerValue]) {
