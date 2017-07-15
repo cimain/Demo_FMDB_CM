@@ -33,7 +33,7 @@
 - (void)setUpViewControllers
 {
     FMViewController *firstVC = [[FMViewController alloc] init];
-    [self addOneChildVC:firstVC title:@"Database" imageName:@"home_normal" selectedImageName:@"home_highlight"];
+    [self addOneChildVC:firstVC title:@"FMDatabase" imageName:@"home_normal" selectedImageName:@"home_highlight"];
     _firstVC = firstVC;
     self.firstVC.tabBarItem.tag = 0;
     
