@@ -86,12 +86,12 @@ static DataBase *_DBCtl = nil;
     NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     
     // 文件路径
-    
     NSString *filePath = [documentsPath stringByAppendingPathComponent:@"DB1.sqlite"];
     
+    NSLog(@"路径 = %@",filePath);
     // 实例化FMDataBase对象
-    
     _db = [FMDatabase databaseWithPath:filePath];
+    
     
     [_db open];
     
